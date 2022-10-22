@@ -1,0 +1,61 @@
+#Login
+POST http://127.0.0.1:5000/api/users/login
+content-type: application/json
+
+{
+    "email": "paja@gmail.com",
+    "password": "12345678"
+}
+
+###
+
+# Register
+POST http://127.0.0.1:5000/api/users/register
+content-type: application/json
+
+{
+    "firstName": "Jovan",
+    "lastName": "Jovic",
+    "email": "jovan@gmail.com",
+    "password": "12345678"
+}
+
+###
+
+# GET ACTIONS
+GET http://127.0.0.1:5000/api/actions/
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJmaXJzdE5hbWUiOiJQYXZsZSIsImxhc3ROYW1lIjoiTWl0aWMiLCJlbWFpbCI6InBhamFAZ21haWwuY29tIiwiaWF0IjoxNjYyNTY4NzQ0fQ.cjn-JT1YEZf8s21dCb-YWIHiGddaVrsaAsvHnUi1hek
+
+###
+
+# POST ACTIONS
+POST http://127.0.0.1:5000/api/actions/
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJmaXJzdE5hbWUiOiJQYXZsZSIsImxhc3ROYW1lIjoiTWl0aWMiLCJlbWFpbCI6InBhamFAZ21haWwuY29tIiwiaWF0IjoxNjYyNTY4NzQ0fQ.cjn-JT1YEZf8s21dCb-YWIHiGddaVrsaAsvHnUi1hek
+content-type: application/json
+
+[
+    {
+        "card_id": 2,
+        "starts": "7:00",
+        "ends": "8:00",
+        "days": [false,false,false,true,true,false,false]
+    },
+    {
+        "card_id": 3,
+        "starts": "6:00",
+        "ends": "10:00",
+        "days": [true,false,false,false,true,false,false]
+    }
+]
+
+###
+
+# GET ACTIONS WITH CODE
+POST http://127.0.0.1:5000/api/actions/code
+content-type: application/json
+
+{
+    "code": 3738
+}
+
+###

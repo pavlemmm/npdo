@@ -1,0 +1,15 @@
+@use '../_variables' as v;
+
+@each $key, $val in v.$theme-colors {
+    $main-color: map-get($val, 'main');
+    $contrast-color: map-get($val, 'contrast');
+
+    .bg-#{$key} {
+        background-color: $main-color;
+        color: $contrast-color;
+    }
+
+    .text-#{$key} {
+        color: $main-color;
+    }
+}

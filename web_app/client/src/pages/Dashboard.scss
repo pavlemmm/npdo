@@ -1,0 +1,20 @@
+.cards-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    h3 {
+        text-align: center;
+    }
+
+    .cards-row-wrapper {
+        display: flex;
+        gap: 5px;
+    }
+}
+
+.cards-column-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}

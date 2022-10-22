@@ -1,0 +1,29 @@
+// COLORS
+$primary: #17a2b8;
+$secondary: #005a7e;
+$light: #fff0d7;
+$dark: #141414;
+
+$theme-colors: (
+    'primary': (
+        'main': $primary,
+        'contrast': $light,
+    ),
+    'secondary': (
+        'main': $secondary,
+        'contrast': $light,
+    ),
+    'light': (
+        'main': $light,
+        'contrast': $dark,
+    ),
+    'dark': (
+        'main': $dark,
+        'contrast': $light,
+    ),
+);
+
+// FONT
+$default-font-family: system-ui, sans-serif;
+$default-font-size: 18px;
+$default-line-height: 1.5;

@@ -1,0 +1,23 @@
+.card {
+    width: 220px;
+    height: 380px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    position: relative;
+
+    button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 20px;
+    }
+}
+
+.card-plus {
+    cursor: pointer;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
